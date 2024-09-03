@@ -33,7 +33,7 @@ jobs:
       - name: Install dependencies
         run: flutter pub get
         # ^ If you want to use a specific version of flutter
-      - run: flutter build apk --release --split-per-abi
+      - run: flutter build apk --release
       - name: Push to Releases
         uses: ncipollo/release-action@v1
         with:
