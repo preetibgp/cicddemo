@@ -4,10 +4,10 @@ name: Flutter
 on:
   # Runs this action when you push on master
   push:
-    branches: [ "main" ]
+    branches: [ "cicd_branch" ]
   # Runs this when a PR against master is created
   pull_request:
-    branches: [ "main" ]
+    branches: [ "cicd_branch" ]
 
 jobs:
   flutter_job:
