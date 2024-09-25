@@ -31,6 +31,7 @@ if (flutterVersionName == null) {
     flutterVersionName = "1.0"
 }
 
+
  android {
     namespace = "com.example.cicddemo"
     compileSdk = 33
