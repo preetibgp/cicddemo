@@ -22,6 +22,7 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
+  
   const MyHomePage({Key ? key, required this.title});
   final String title;
 
@@ -37,7 +38,7 @@ class _MyHomePageState extends State<MyHomePage> {
       _counter++;
     });
   }
-  
+
 
   @override
   Widget build(BuildContext context) {
