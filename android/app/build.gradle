@@ -26,11 +26,11 @@ if (flutterVersionName == null) {
 android {
     namespace = "com.example.cicddemo"
     compileSdk 34
-    ndkVersion = '25.1.8937393'
+    ndkVersion = '24.0.8215888'
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
     }
 
     defaultConfig {
@@ -38,10 +38,11 @@ android {
         applicationId = "com.example.cicddemo"
         // You can update the following values to match your application needs.
         // For more information, see: https://docs.flutter.dev/deployment/android#reviewing-the-gradle-build-configuration.
-        minSdk = 22
-        targetSdk = 33
+        minSdk = 21
+        targetSdk = 34
         versionCode = flutterVersionCode.toInteger()
         versionName = flutterVersionName
+        multiDexEnabled true
     }
 
     buildTypes {
